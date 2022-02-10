@@ -1,0 +1,73 @@
+{
+    "deviceName": "21-GQ-P600-8888",
+    "saveOriginalImg": true,
+    "grainType":"00",
+    "childType":"99",
+    "wheat": {
+        "Camera": {
+            "cameraOne": {
+                "BGain": 1850,
+                "DownExposureTime": 200,
+                "ExposureGain": 8,
+                "GGain": 1050,
+                "RGain": 2200,
+                "TriggerDelay": 0,
+                "UPExposureTime": 200,
+                "hFlip": true,
+                "vFlip": false
+            },
+            "cameraThree": {
+                "BGain": 1850,
+                "ExposureGain": 8,
+                "GGain": 1050,
+                "RGain": 2200,
+                "TriggerDelay": 0,
+                "UPExposureTime": 400,
+                "endLine": 800,
+                "endTime": 11,
+                "hFlip": false,
+                "startLine": 82,
+                "startTime": 21,
+                "targetArea": 75,
+                "vFlip": false
+            },
+            "cameraTwo": {
+                "BGain": 1850,
+                "DownExposureTime": 200,
+                "ExposureGain": 8,
+                "GGain": 1050,
+                "RGain": 2200,
+                "TriggerDelay": 0,
+                "UPExposureTime": 200,
+                "hFlip": false,
+                "vFlip": false
+            },
+            "downCamerIp": "223.254.2.1",
+            "flowCamerIp": "223.254.3.1",
+            "max_trigger": 1000,
+            "upCamerIp": "223.254.1.1"
+        },
+        "Motor": {
+            "cmMotor": {
+                "open_height": 1100
+            },
+            "glMotor": {
+                "open_on_vibrate": true
+            },
+            "slMotor": {
+                "back_speed": 800,
+                "end_position": 6300,
+                "forward_speed": 200,
+                "pre_position": 1100,
+                "start_position": 300,
+                "trigger_delay": 10
+            },
+            "zdMotor": {
+                "center_rate": 100,
+                "output_speed": 100,
+                "vibration_rate": 100,
+                "voltage": 120
+            }
+        }
+    }
+}

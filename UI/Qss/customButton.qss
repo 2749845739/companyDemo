@@ -1,0 +1,7 @@
+CustomButton QPushButton[style="true"]{
+        border-radius: 7px;
+        border: 4px solid #967A50;
+}
+CustomButton QPushButton[style="false"]{
+}
+

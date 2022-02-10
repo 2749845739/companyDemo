@@ -1,0 +1,32 @@
+cmake_minimum_required(VERSION 3.5)
+if(POLICY CMP0074)
+  cmake_policy(SET CMP0074 NEW)
+endif()
+project(utils VERSION 0.0.1)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(UTILS_SRC
+  ${CMAKE_CURRENT_SOURCE_DIR}/utils.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/utils.h
+)
+
+add_library(${PROJECT_NAME} ${UTILS_SRC})
+
+target_include_directories(${PROJECT_NAME}
+  PRIVATE
+    ${CMAKE_SOURCE_DIR}
+  INTERFACE
+    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
+    $<INSTALL_INTERFACE:include>
+)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+  VERSION ${PROJECT_VERSION}
+  SOVERSION ${PROJECT_VERSION_MAJOR}
+  POSITION_INDEPENDENT_CODE $<BOOL:${BUILD_SHARED_LIBS}>
+)
+
+# add_subdirectory(examples)

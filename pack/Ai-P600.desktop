@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Application
+Version=1.0.0
+Comment=Use P600 detection
+Exec=/opt/P600/start.sh
+GenericName=jiance
+Icon=/opt/P600/bin/icon.png
+Name=P600
+Terminal=false
+Type=Application
+

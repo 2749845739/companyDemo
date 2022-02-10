@@ -1,0 +1,9 @@
+Package: P600
+Version: 1.0.0
+Section: free
+Priority: optional
+Architecture: amd64
+Installed-Size: 61952
+Maintainer: gaozhe
+Provides: P600
+Description: AI detection

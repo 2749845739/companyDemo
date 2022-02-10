@@ -1,0 +1,66 @@
+{
+   "wheat":{
+      "Camera":{
+      "upCamerIp":"223.254.1.1",
+      "downCamerIp":"223.254.2.1",
+      "flowCamerIp":"223.254.3.1",
+      "max_trigger":1000,
+      "cameraOne": {
+         "UPExposureTime":223,
+         "DownExposureTime":350,
+         "ExposureGain":8,
+         "TriggerDelay":0,
+         "RGain":2200,
+         "GGain":1050,
+         "BGain":1850,
+         "vFlip":false,
+         "hFlip":true
+      },
+      "cameraTwo": {
+         "UPExposureTime":322,
+         "DownExposureTime":400,
+         "ExposureGain":8,
+         "TriggerDelay":0,
+         "RGain":2200,
+         "GGain":1050,
+         "BGain":1850,
+         "vFlip":false,
+         "hFlip":false
+      },
+       "cameraThree": {
+         "UPExposureTime":300,
+         "ExposureGain":8,
+         "TriggerDelay":0,
+         "RGain":2200,
+         "GGain":1050,
+         "BGain":1850,
+         "vFlip":false,
+         "hFlip":false
+      }
+   },
+   "Motor":{
+     "slMotor":{
+        "direction":1,
+        "positive_speed":180,
+        "negative_speed":495,
+        "position_0":1000,
+        "position_1":100,
+        "position_2":100
+     },
+     "cmMotor":{
+        "direction":1,
+        "positive_speed":10,
+        "negative_speed":10,
+        "position_0":10
+     },
+     "zdMotor":{
+        "input_vibrate":3000,
+        "clear_vibrate":3000
+     },
+     "zlMotor":{
+        "open_on_vibrate":true,
+        "close_on_vibrate":false
+     }
+   }
+    }
+}
